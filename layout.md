@@ -1,3 +1,3 @@
 untitled.tex
-section_Observations__.tex
+section_Astrometric_Theory_begin_itemize__.tex
 section_Analysis_begin_equation_Delta__.tex
