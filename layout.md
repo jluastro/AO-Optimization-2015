@@ -6,4 +6,5 @@ figures/full_pd_grid/full_pd_grid.png
 figures/time_variability_plot/time_variability_plot.png
 We_also_looked_at_the__.tex
 figures/time_variability_pairwise_plot/time_variability_pairwise_plot.png
+subsection_Hardware_Adjustments__.tex
 section_Acknowledgements_We_acknowledge_the__.tex
