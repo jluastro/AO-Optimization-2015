@@ -1,8 +1,8 @@
 untitled.tex
-subsection_Project_Milestones_label_sec__.tex
+section_Project_Milestones_label_sec__.tex
 section_Astrometric_Theory_begin_itemize__.tex
-section_Analysis_begin_equation_Delta__.tex
 section_Instrumental_Modeling_Our_efforts__.tex
+section_Analysis_begin_equation_Delta__.tex
 figures/full_pd_grid/full_pd_grid.png
 figures/time_variability_plot/time_variability_plot.png
 We_also_looked_at_the__.tex
