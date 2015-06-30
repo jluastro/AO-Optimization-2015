@@ -27,10 +27,11 @@ MAIN_TEMPLATE = r"""
 
 {headerin}
 
-
 \begin{{document}}
 
 {titlecontent}
+
+{authorsin}
 
 {sectioninputs}
 
@@ -104,6 +105,10 @@ def build_authorea_latex(localdir, builddir, latex_exec, bibtex_exec, outname,
         headerin = get_input_string('header', localdir)
     else:
         headerin = ''
+    if os.path.exists('authors.tex'):
+        authorsin = get_input_string('authors', localdir)
+    else:
+        authorsin = ''
 
     if not headerin and not preamblein:
         print("Neither preable nor header found!  Proceeding, but that's rather weird")
@@ -170,7 +175,7 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(description='Local builder for authorea papers.')
 
-    parser.add_argument('localdir', nargs='?', default='.',
+    parser.add_argument('localdir', nargs='?', default=os.getcwd(),
                         help='The directory to actually search for the authorea'
                              ' files in. Default to the current directory.')
     parser.add_argument('--build-dir', '-d', default='authorea_build',
@@ -192,6 +197,8 @@ if __name__ == '__main__':
                              'Default is to not do anything with it.')
 
     args = parser.parse_args()
+
+    print( args.localdir )
 
     build_authorea_latex(args.localdir, args.build_dir, args.latex, args.bibtex,
                          args.filename, args.usetitle, args.usebibtex,
