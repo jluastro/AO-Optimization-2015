@@ -1,0 +1,7 @@
+Build the PDF for this document using the local_build.py script. If the paper's git 
+repository is in a directory such as /g/lu/doc/papers/AOopt_2015report/AO-Optimization-2015/
+then you must run the script using:
+
+cd /g/lu/doc/papers/AOopt_2015report/AO-Optimization-2015/
+./local_build.py /g/lu/doc/papers/AOopt_2015report/AO-Optimization-2015/
+
