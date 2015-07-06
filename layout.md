@@ -11,8 +11,6 @@ section_Analysis.tex
 section_AO_Opt_Tools.tex
 section_testing.tex
 section_dissemination.tex
-section_psf_reconstruction.tex
-section_Extending_AO_Optimization.tex
 section_year5.tex
 section_Acknowledgements.tex
 appendix_Original_WMKF_Goals.tex
