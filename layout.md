@@ -1,3 +1,4 @@
+abstract.tex
 Introduction.tex
 section_project_overview.tex
 section_instrumental_modeling_1.tex
@@ -6,8 +7,8 @@ figures/time_variability_plot/time_variability_plot.png
 section_instrumental_modeling_2.tex 
 figures/time_variability_pairwise_plot/time_variability_pairwise_plot.png
 subsection_NIRC2_Hardware_Adjustments.tex
+section_atmospheric_code.tex
 section_Astrometric_Theory.tex
-section_Analysis.tex
 section_AO_Opt_Tools.tex
 section_testing.tex
 section_dissemination.tex
