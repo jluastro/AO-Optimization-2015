@@ -1,31 +1,142 @@
 \section{Project Overview and Status}
 \label{sec:overview}
 
-The AO Optimization project consists of the following top-level
-objectives:
-
+Over the past year, the AO Optimization project has revised and
+updated the original project goals based on our progress and
+experience in the first three years of the project. We view the
+following seven top-level objectives as essential for completion of
+the AO Optimization project:
 \begin{enumerate}
-\item Map NIRC2 instrumental aberrations.
 \item Develop algorithms to predict atmospheric-induced aberrations
-  from MASS/DIMM data.
-\item Update NIRC2 distortion solution.
-\item Upgrade Starfinder 2.0 to extract on-axis PSF from image with
-  spatially varying PSF.
+  from MASS/DIMM data for both natural and laser guide star observations.
+\item Map NIRC2 instrumental aberrations that effect the PSF shape.
+\item Update the NIRC2 distortion solution utilizing a spatially
+  variable PSF.
+\item Upgrade Starfinder 2.0 to extract an on-axis PSF from images with
+  a spatially varying PSF due to atmospheric and instrumental aberrations.
 \item Upgrade Starfinder 2.0 to extract stellar astrometry and
-  photometry using varying PSFs.
-\item Apply AO Optimization to Galactic Center astrometry.
-\item Disseminate AO Optimization to a broader community.
+  photometry using spatially varying PSFs.
+\item Apply AO Optimization tools to Galactic Center and demonstrate
+  astrometric gains.
+\item Disseminate AO Optimization tools to a broader community.
+\end{enumerate}
+These revised goals differ from the original project goals 
+(\ref{app:original_goals}) in that
+they reflect the time and effort needed for software and
+algorithm development (atmospheric code and Starfinder 2.0) after Year
+3. As a reminder, the AO Optimization project funded by the
+W.M.K.F. supports YYY HOW MANY POSTDOCS YYYY with additional unfunded 
+contributions by YYY OTHER PERSONNEL YYY. 
+
+\subsection{End of Year 3 Status}
+At the end of Year 3, we reported to the EAC the following status for
+each of the top-level goals:
+\begin{enumerate}
+\item {\em Develop algorithms to predict atmospheric-induced aberrations
+  from MASS/DIMM data for both natural and laser guide star
+  observations.} \\
+  The ``atmospheric code``was delivered by Matthew Britton that
+  implemented both NGS and LGS off-axis PSF estimation. This code was
+  accessed at UCLA by way of a git repository and a Jenkins continuous
+  integration server, including unit tests, hosted at tOSC
+  (M. Britton's employer). A version of the code was also installed at
+  Keck and a web interface has been provided at YYY INSERT URL YYY.
+
+  The atmospheric code was tested on a suite of NGS and LGS
+  binary stars as well as indpendent theoretical predictions and, in
+  all cases, the predicted off-axis PSFs from the atmospheric code
+  matched the comparison off-axis PSF very well with respect to
+  Strehl, FWHM, and PSF residuals. 
+
+\item {\em Map NIRC2 instrumental aberrations that effect the PSF
+    shape.} \\
+  The instrumental aberrations that effect PSF shape were
+  measured using a grid of in/out-of focus fiber observations and
+  phase diversity techniques. The resulting phase map YYY \\
+  temporal stability \\
+  chromaticity 
+  
+\item {\em Update the NIRC2 distortion solution utilizing a spatially
+  variable PSF.} \\
+  YYY No data as of last year. YYY
+
+\item {\em Upgrade Starfinder 2.0 to extract an on-axis PSF from images with
+  a spatially varying PSF due to atmospheric and instrumental
+  aberrations.} \\
+  YYY Had a test case using STF 2.0 under-pinnings to extract an
+  on-axis PSF. However, this wasn't implemented within our STF 2.0
+  framework and wrappers. Here is Gunther's description of the
+  differences. 
+
+  It is correct that the tools I presented were integrated with
+  Starfinder. But what I did not realize at that point is how much of
+  our way to do PSF-extraction and -fitting is actually implemented in
+  our find\_stf wrappers. The real strategy of our analysis is there,
+  not in Starfinder. So we spent now most of the time to rigorously
+  integrate it with our software that is the result of a decade of
+  development. That is way more useful than having a handful of
+  primitive new wrappers, and it is a whole different level of
+  complication, especially if the goal is to preserve the previous
+  functionality. We also improved Starfinder beyond the AO-opt part by
+  including many changes of the versions that were floating around. 
+
+
+\item {\em Upgrade Starfinder 2.0 to extract stellar astrometry and
+  photometry using spatially varying PSFs.} \\
+  YYY No progress in year 3?
+
+\item {\em Apply AO Optimization tools to Galactic Center and demonstrate
+  astrometric gains.} \\
+  YYY Gunther presented a test on a single maser mosaic image. It used
+  the under-pinnings of STF 2.0; but not our official ``wrapper'' of
+  STF 2.0.
+
+\item {\em Disseminate AO Optimization tools to a broader community.} \\
+  The atmospheric code was deployed to the public via a web-service
+  interface hosted at Keck. This web-service allowed users to model
+  the atmospheric effects on PSFs throughout a field of view. 
 \end{enumerate}
 
+YYY Any comments about personnel changes here? We commented in the
+mid-term report.
+
+\subsection{End of Year 4 Status}
+\begin{enumerate}
+\item {\em Develop algorithms to predict atmospheric-induced aberrations
+  from MASS/DIMM data for both natural and laser guide star
+  observations.} \\
+  YYY Code has migrated away from tOSC due to the departure of
+  M. Britton. UCLA has taken ownership of the git repository (but not
+  the Jenkins server). 
+
+  During year 4, we identified a number of small bugs and one major
+  performance issue with the interface between Starfinder 2.0 and the
+  atmospheric code. The interface has been re-designed, but not yet
+  implemented, to improve Starfinder 2.0 efficiency by 10-100
+  fold. More details are presented in \S\ref{sec:atmospheric_code}.
+
+\item {\em Map NIRC2 instrumental aberrations that effect the PSF
+    shape.} \\
+  
+  
+\item {\em Update the NIRC2 distortion solution utilizing a spatially
+  variable PSF.} \\
 
 
-\subsection{Galactic Center Science}
+\item {\em Upgrade Starfinder 2.0 to extract an on-axis PSF from images with
+  a spatially varying PSF due to atmospheric and instrumental
+  aberrations.} \\
 
 
-\subsection{EAC Recommendations}
+\item {\em Upgrade Starfinder 2.0 to extract stellar astrometry and
+  photometry using spatially varying PSFs.} \\
 
-\subsection{Year 4 Overview}
-The following report is written for the External Advisory Committee (EAC) visit in July, 2015. This report contains a status update on the AO Optimization project including completed milestones in Year 4 (2014-07-01 to 2015-07-01) and upcoming milestones for the final Year 5. As a reminder, the AO Optimization project consists of the following high-level goals:
+
+\item {\em Apply AO Optimization tools to Galactic Center and demonstrate
+  astrometric gains.} \\
+
+\item {\em Disseminate AO Optimization tools to a broader community.} \\
+\end{enumerate}
 
   
   

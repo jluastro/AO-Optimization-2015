@@ -7,7 +7,10 @@ figures/time_variability_plot/time_variability_plot.png
 section_instrumental_modeling_2.tex 
 figures/time_variability_pairwise_plot/time_variability_pairwise_plot.png
 subsection_NIRC2_Hardware_Adjustments.tex
-section_atmospheric_code.tex
+section_atmospheric_code_1.tex
+figures/atmospheric_lgs_geometry/atmospheric_lgs_geometry.png
+figures/atmospheric_lgs_geometry_check/atmospheric_lgs_geometry_check.png
+section_atmospheric_code_2.tex
 section_Astrometric_Theory.tex
 section_AO_Opt_Tools.tex
 section_testing.tex
