@@ -16,6 +16,7 @@ figures/atmospheric_lgs_geometry/atmospheric_lgs_geometry.png
 figures/atmospheric_lgs_geometry_check/atmospheric_lgs_geometry_check.png
 section_atmospheric_code_2.tex
 section_Astrometric_Theory.tex
+usepackage_english_babel_usepackage_utf8__.tex
 section_AO_Opt_Tools.tex
 section_testing.tex
 section_dissemination.tex
