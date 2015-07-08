@@ -18,7 +18,6 @@ section_atmospheric_code_2.tex
 section_Astrometric_Theory.tex
 section_AO_Opt_Tools.tex
 section_testing.tex
-jj__.tex
 section_dissemination.tex
 section_year5.tex
 section_Acknowledgements.tex
