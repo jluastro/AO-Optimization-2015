@@ -24,7 +24,9 @@ figures/ast_theory_true_pos/ast_theory_true_pos.png
 section_astrometric_theory_4.tex
 section_AO_Opt_Tools.tex
 section_testing.tex
-section_dissemination.tex
+section_dissemination_1.tex
+figures/diss_git_repos/diss_git_repos.png
+section_dissemination_2.tex
 section_year5.tex
 section_Acknowledgements.tex
 appendix_Original_WMKF_Goals.tex
