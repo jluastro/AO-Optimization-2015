@@ -39,12 +39,11 @@ mid-term report.
 
 
 \subsection{Goal 1: Develop algorithms to predict atmospheric-induced aberrations
-  from MASS/DIMM data for both natural and laser guide star
-  observations.}
+  from MASS/DIMM data for both natural and laser guide star observations.}
 
 \noindent
-\textbf{Year 3 Status:}
-The {\em atmospheric code} was delivered by Matthew Britton and
+\textit{Year 3 Status:}
+The atmospheric code was delivered by Matthew Britton and
 implemented both NGS and LGS off-axis PSF estimation. This code was
 accessed at UCLA from a git repository and a Jenkins continuous
 integration server, including unit tests, hosted at tOSC
@@ -58,7 +57,7 @@ matched the comparison off-axis PSF very well with respect to
 Strehl, FWHM, and PSF residuals. 
 
 \noindent
-\textbf{Year 4 Status:} (see also \S\ref{sec:atmospheric_code})
+\textit{Year 4 Status:} (see also \S\ref{sec:atmospheric_code})
 During year 4, the atmospheric code has been routinely used with on-sky data with good success and is nearly complete.
 We identified a number of small bugs and one major
 performance issue with the IDL interface to the atmospheric code, 
@@ -74,7 +73,7 @@ UCLA now administers the git repository.
     shape.}
 
 \noindent 
-\textbf{Year 3 Status:}
+\textit{Year 3 Status:}
 The instrumental aberrations that effect PSF shape were measured over
 a dense grid in the NIRC2 focal plane using in-focus and out-of-focus
 fiber observations and phase diversity techniques. The resulting
@@ -87,7 +86,7 @@ filters of 50$-$80 nm. The variations appeared to be due to a
 wavelength-dependent defocus term.
   
 \noindent 
-\textbf{Year 4 Status:} (see also \S\ref{sec:instrument})
+\textit{Year 4 Status:} (see also \S\ref{sec:instrument})
 We have moved to using Zernike decomposition of the phase maps and 
 interpolation of the individual
 Zernike coefficients to produce a continuous aberration map. 
@@ -103,11 +102,11 @@ the "new" aberration maps are 70\% complete.
   variable PSF.}
 
 \noindent
-\textbf{Year 3 Status:}
+\textit{Year 3 Status:}
 No new progress reported in Year 3.
 
 \noindent
-\textbf{Year 4 Status:} (see also \S\ref{sec:distortion})
+\textit{Year 4 Status:} (see also \S\ref{sec:distortion})
 We have successfully observed the globular cluster M53 using NIRC2
 while simultaneously measuring the turbulence profile with the
 MASS/DIMM unit. We have completed an extensive dither/rotation pattern
@@ -119,7 +118,7 @@ Starfinder 2.0.
   a spatially varying PSF due to atmospheric and instrumental aberrations.}
 
 \noindent
-\textbf{Year 3 Status:} 
+\textit{Year 3 Status:} 
 YYY Had a test case using STF 2.0 under-pinnings to extract an
 on-axis PSF. However, this wasn't implemented within our STF 2.0
 framework and wrappers. Here is Gunther's description of the
@@ -138,7 +137,7 @@ functionality. We also improved Starfinder beyond the AO-opt part by
 including many changes of the versions that were floating around. 
 
 \noindent
-\textbf{Year 4 Status:}
+\textit{Year 4 Status:}
 (see also \S\ref{sec:astrometric_theory} and \S\ref{sec:tools})
 YYY FILL IN YYYY
 
@@ -146,11 +145,11 @@ YYY FILL IN YYYY
   photometry using spatially varying PSFs.}
 
 \noindent
-\textbf{Year 3 Status:}
+\textit{Year 3 Status:}
 No new progress was reported in Year 3.
 
 \noindent
-\textbf{Year 4 Status:}
+\textit{Year 4 Status:}
 (see also \S\ref{sec:astrometric_theory} and \S\ref{sec:tools})
 
 
@@ -158,7 +157,7 @@ No new progress was reported in Year 3.
   astrometric gains.}
 
 \noindent
-\textbf{Year 3 Status:}
+\textit{Year 3 Status:}
 We presented a test run using our first-pass version of Starfinder
 2.0 on a single maser mosaic image. While this test was simple and highly
 customized as compared with our normal Galactic Center
@@ -166,7 +165,7 @@ analysis, it was an essential first step in demonstrating that the
 ``on-axis'' PSF could be extracted from on-sky Galactic Center data.
  
 \noindent
-\textbf{Year 4 Status:}
+\textit{Year 4 Status:}
 (see also \S\ref{sec:testing})
  We have completed modifications to the GC analysis pipeline to fully
 incorporate Starfinder 2.0, which calls the atmospheric code. We have
@@ -177,13 +176,13 @@ Center images and YYY RESULTS YYY.
 \subsection{Goal 7: Disseminate AO Optimization tools to a broader community.}
 
 \noindent
-\textbf{Year 3 Status:}
+\textit{Year 3 Status:}
 The atmospheric code was deployed to the public via a web-service
 interface hosted at Keck. This web-service allowed users to model
 the atmospheric effects on PSFs throughout a field of view. 
 
 \noindent
-\textbf{Year 4 Status:}
+\textit{Year 4 Status:}
 (see also \S\ref{sec:dissemination})
 All of the AO Optimization software has been organized and archived in
 a project code repository available on bitbucket.org. We have
