@@ -1,0 +1,58 @@
+
+It is helpful to recall some basic definitions. The pupil function is defined as:
+\begin{equation}
+P(u,v) = \left\{\begin{array}{cl} A(u,v) \cdot \exp\big[W(u,v)\big], & \mbox{inside pupil}\\ 
+0, & \mbox{outside pupil} \end{array}\right.
+\end{equation}
+with $W(u,v)$ the phase aberrations (phase map in radian) at a point $(u,v)$ in the exit pupil plane, and the amplitude
+\begin{equation}\label{amp}
+A(u,v) = 1 \; \forall (u,v)
+\end{equation}
+
+The PSF is the power spectrum of the pupil function:
+\begin{equation}
+I(x,y) \propto \Big \lvert \iint\limits_{-\infty}^{\: +\infty} P(u,v) \cdot \exp\Big(\frac{-2\pi i (xu+yv)}{\lambda R}\Big)\; dudv \Big \rvert
+\end{equation}
+with $R$ the radius of the pupil (in our case the radius of open pupil for which our phase maps are calculated), and the $\lambda$ the wavelength of the light. The center of light of the PSF can be calculated from $I(x,y)$ with
+\begin{eqnarray}
+\langle x \rangle = E^{-1} \iint\limits_{-\infty}^{\: +\infty} x \cdot I(x,y) \; dxdy \label{cl1}\\
+\langle y \rangle = E^{-1} \iint\limits_{-\infty}^{\: +\infty} y \cdot I(x,y) \; dxdy \label{cl2}
+\end{eqnarray}
+with the total flux
+\begin{equation}
+E = \iint\limits_{-\infty}^{\; +\infty} I(x,y) \: dxdy
+\end{equation}
+
+The optical transfer function (OTF; $\tau$) is defined as the Fourier transform of the PSF:
+\begin{equation}\label{ft}
+\tau(\xi,\eta) = FT\big[I(x,y)\big] = E^{-1} \iint\limits_{-\infty}^{\: +\infty} I(x,y) \exp[2 \pi i (\xi x + \eta y)] \; dxdy
+\end{equation}
+
+Analogue to Eqs.~\ref{cl1} and \ref{cl2}, the relation between the center of light and the OTF is given by:
+\begin{eqnarray}
+\langle x \rangle = \frac{1}{2\pi i} \cdot \Big(\frac{\partial \tau(\xi, \eta)}{\partial \xi}\Big)_{\xi = \eta = 0} \\
+\langle y \rangle = \frac{1}{2\pi i} \cdot \Big(\frac{\partial \tau(\xi, \eta)}{\partial \eta}\Big)_{\xi = \eta = 0}
+\end{eqnarray}
+with $\tau$ the FT of the {\it normalized} PSF. Since $\langle x \rangle$ and $\langle y \rangle$ are real, it follows:
+\begin{eqnarray}
+\langle x \rangle = \frac{1}{2\pi} \cdot \Big(\frac{\partial \Im[\tau(\xi, \eta)]}{\partial \xi}\Big)_{\xi = \eta = 0} \\
+\langle y \rangle = \frac{1}{2\pi} \cdot \Big(\frac{\partial \Im[\tau(\xi, \eta)]}{\partial \eta}\Big)_{\xi = \eta = 0}
+\end{eqnarray}
+and
+\begin{equation}\label{con1}
+\Re\Bigg[\Big(\frac{\partial \tau(\xi, \eta)}{\partial \xi}\Big)_{\xi = \eta = 0}\Bigg] = \Re\Bigg[\Big(\frac{\partial \tau(\xi, \eta)}{\partial \eta}\Big)_{\xi = \eta = 0}\Bigg] = 0
+\end{equation}
+with $\Im(\tau)$ and $\Re(\tau)$ the imaginary and the real part of the OTF.
+
+For the following it is helpful to remeber some symmetry constrains of the OTF.
+Because the PSF is a real, positive quantity $I(x,y) > 0 \; \forall x,y$ the OTF satisfies the symmetry condition:
+\begin{equation}\label{sym}
+\tau(-\xi, -\eta) = \tau^{\ast}(\xi,\eta)
+\end{equation}
+with $\tau^{\ast}$ the complex conjugate to $\tau$. In particular, with Eqs.~\ref{sym} and \ref{ft} it follows:
+\begin{eqnarray}
+\Re[\tau(0,0)] = 1 \\
+\Im[\tau(0,0)] = 0 \label{con2}
+\end{eqnarray}
+
+We define the true position as the center of curvature of the reference sphere of our optical system, with the chief ray (defining the line of sight) running through the center of curvature of the reference sphere and the center of the exit pupil (see Fig.~\ref{fig:ast_theory_tp}).

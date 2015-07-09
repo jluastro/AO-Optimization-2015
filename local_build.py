@@ -43,7 +43,7 @@ MAIN_TEMPLATE = r"""
 FIGURE_TEMPLATE=r"""
 \begin{figure}[h!]
 \begin{center}
-\includegraphics[width=1\columnwidth]{<figfn>}
+\includegraphics[<size>]{<figfn>}
 <caption>
 \end{center}
 \end{figure}
@@ -83,6 +83,19 @@ def get_figure_string(filename, localdir):
         caption = r'\caption{ \protect\input{' + os.path.abspath(capfn) + '}}'
     else:
         caption = ''
+
+    sizefn = os.path.join(figdir, 'size.tex')
+    if os.path.exists(sizefn):
+        _size = open(sizefn, 'r')
+        sizeIn = _size.read()
+
+        # Split on \n to get height/width separately
+        size_split = sizeIn.split('\\n')
+        for ii in range(len(size_split)):
+            size_split[ii] = size_split[ii] + 'px'
+        size = ','.join(size_split)
+    else:
+        size = '1\columwidth'
 
     return FIGURE_TEMPLATE.format(**locals())
 

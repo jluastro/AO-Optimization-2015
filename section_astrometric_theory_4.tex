@@ -1,0 +1,64 @@
+A main result of Mahajan (1985) is the fact that for the aberration free case even under inhomogeneous illumination of the pupil the true position is aligned with the (mathematical) center of light and the maximum pixel. In the case of aberrations, however, these three reference points deviate from each other, generally. If we describe $I(x,y)$ in the coordinate system with origin at the true position then $(\langle x \rangle, \langle y \rangle)$ from Eqs.~\ref{cl1} and \ref{cl2} is the deviation of the center of light from the true position. For our further arguments we use this convention, i.e., $\langle x \rangle = \langle y \rangle$ = 0 for an aberration free system.
+
+We model the spatially variable PSFs as the convolution of  three PSF-kernels:
+
+\begin{equation}
+\rm{OTF}_{\rm{off-axis}} = \rm{OTF}_{\rm{on-axis}} \cdot \rm{OTF}_{\rm{atm.}} \cdot \rm{OTF}_{\rm{instr.}}
+\end{equation}
+
+For the product of two OTFs we find with Eq.~\ref{con1} through \ref{con2} the resulting center of light to be the vector sum of the centroids of the individual factors:
+
+\begin{equation}
+\tau  = \tau_1 \cdot \tau_2 = (a + bi)\cdot (c + di)
+\end{equation}
+
+with $a = \Re(\tau_1)$, $b = \Im(\tau_1)$, $c = \Re(\tau_2)$, and $d = \Im(\tau_2)$. Then we find:
+
+\begin{align}
+\langle x \rangle_{\tau} & = \frac{1}{2\pi} \cdot \Big(\frac{\partial}{\partial\xi}\Im[\tau]\Big)_{\xi = \eta = 0} = \frac{1}{2\pi} \cdot \Big(\frac{\partial}{\partial\xi}(bc+ad)\Big)_{\xi = \eta = 0}\nonumber \\ 
+& = \frac{1}{2\pi} \cdot \Big(\frac{\partial}{\partial\xi}b \cdot c + b \cdot \frac{\partial}{\partial\xi}c + \frac{\partial}{\partial\xi}a \cdot d + a \cdot \frac{\partial}{\partial\xi}d\Big)_{\xi = \eta = 0}\nonumber \\
+& = \frac{1}{2\pi} \cdot \Big(\frac{\partial}{\partial\xi}b + \frac{\partial}{\partial\xi}d\Big)_{\xi = \eta = 0}\nonumber \\
+& = \langle x \rangle_{\tau_1} + \langle x \rangle_{\tau_2}
+\end{align}
+
+(and for $\langle y \rangle$ likewise) and thus
+ 
+\begin{equation}
+\begin{bmatrix}
+        \langle x \rangle \\ \langle y \rangle \end{bmatrix}_{\rm{off-axis}} = \begin{bmatrix} \langle x \rangle \\ \langle y \rangle\end{bmatrix}_{\rm{on-axis}} + \begin{bmatrix}\langle x \rangle \\ \langle y \rangle\end{bmatrix}_{\rm{atm.}} + \begin{bmatrix}\langle x \rangle \\ \langle y \rangle\end{bmatrix}_{\rm{instr.}}
+\end{equation}
+
+This is the key result for our problem because it allows us to separate time-variable and field-variable contributors. In our case we have both a static (i.e. constant in time) contributor, a spatially - i.e. with field position $(x',y')$ - invariant contributor, and a mixed contributor: 
+
+\begin{equation}\label{dep}
+\rm{OTF}_{\rm{off-axis}}(x',y',t)  =  \rm{OTF}_{\rm{on-axis}}(t)  \cdot  \rm{OTF}_{\rm{atm.}}(x',y',t)  \cdot  \rm{OTF}_{\rm{instr.}}(x',y')
+\end{equation} 
+
+and accordingly:
+
+\begin{equation}
+\underbrace{\begin{bmatrix}
+        \langle x \rangle \\ \langle y \rangle \end{bmatrix}_{\rm{off-axis}}}_{(x',y',t)} = \underbrace{\begin{bmatrix} \langle x \rangle \\ \langle y \rangle\end{bmatrix}_{\rm{on-axis}}}_{(t)} + \underbrace{\begin{bmatrix}\langle x \rangle \\ \langle y \rangle\end{bmatrix}_{\rm{atm.}}}_{(x',y',t)} + \underbrace{\begin{bmatrix}\langle x \rangle \\ \langle y \rangle\end{bmatrix}_{\rm{instr.}}}_{(x',y')}
+\end{equation}
+
+ 
+Eq.~\ref{dep} shows that an empirical centroid estimation (e.g., defined as the centroid calculation over a non-infinte support around the maximum pixel from a noisy estimate of the PSF, or any of the above) on $I_{\rm{off-axis}}(x,y; x',y',t)$ (where $I(x,y)$ is unknown for large $x,y$) becomes dependent on both field position and time. Consequentely, it is not useful as astrometric reference. However, we see that the first term on the right side of Eq.~\ref{dep} has no field dependence. Since the centroid deviations are additive, we can tolerate an offset in this terms and any choice of an astrometic reference point is valid. If our further PSF-modeling with the atmospheric and instrumental OTFs preserves the initial relation between the astrometric reference (the point in the 'on-axis PSF' that we placed in the center of our PSF array) and the true position, we avoid systematics in our relative astrometry.
+
+In order to estimate the first term (the 'on-axis PSF'), we use an number of reference stars which we deconvolve with both the atmospheric and instrumental kernel. Assuming that the resulting on-axis estimates are sufficiently similar in shape, we apply an arbitrary PSF-centering method (e.g., StarFinders centroider that uses the centroid of the innermost FWHM box around the maximum of the PSF). We then average the individual deconvolved and centered reference stars. We obtain an 'on-axis' PSF with an astrometric reference $[\langle x \rangle , \langle y \rangle]_{\rm{on-axis}}$ which has an unknown deviation from the true position and is different for each frame, but which is independent on the field position. 
+
+While we have to make sure that the center of light is strictly zero for the atmospheric kernel which is variable with both time and position, we have two options for the static instrumental part:
+
+\begin{enumerate}
+
+\item
+We make sure that $[\langle x \rangle , \langle y \rangle]_{\rm{instr.}}$ is zero. This is most precisely done using the relation between the the aberration function $W(u,v)$ and the center of light:
+\begin{equation}
+\langle x \rangle = \frac{R}{E} \iint \limits_S I(u,v) \frac{\partial W(u,v)}{\partial u} \; du dv
+\end{equation}
+(and $\langle y \rangle$ likewise) with $I(u,v) = A(u,v)^2$ the illumination of the pupil (assumed to be uniform in our case, see Eq.~\ref{amp}), $R$ the radius of the circular open NIRC2 pupil, and $E$ the total flux. $W(u,v)$ is our phase map after applying the hexagonal pupil.
+\item
+We use a different centering scheme for the instrumental kernel ( e.g., centering on the maximum of the kernel). Because this term is independent on time it is possible to account for the displacement with a look-up table or the distortion map. 
+\end{enumerate}
+
+It is the best way to use method 1 because we avoid further complications with look-up tables or additional contributions in the distortion correction that are not caused by geometric distortion.
+

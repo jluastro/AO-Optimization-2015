@@ -15,7 +15,13 @@ section_atmospheric_code_1.tex
 figures/atmospheric_lgs_geometry/atmospheric_lgs_geometry.png
 figures/atmospheric_lgs_geometry_check/atmospheric_lgs_geometry_check.png
 section_atmospheric_code_2.tex
-section_Astrometric_Theory.tex
+section_astrometric_theory_1.tex
+figures/ast_theory_psf/ast_theory_psf.png
+section_astrometric_theory_2.tex
+figures/ast_theory_op/ast_theory_op.png
+section_astrometric_theory_3.tex
+figures/ast_theory_true_pos/ast_theory_true_pos.png
+section_astrometric_theory_4.tex
 section_AO_Opt_Tools.tex
 section_testing.tex
 section_dissemination.tex
