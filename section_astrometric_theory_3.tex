@@ -13,7 +13,7 @@ The PSF is the power spectrum of the pupil function:
 \begin{equation}
 I(x,y) \propto \Big \lvert \iint\limits_{-\infty}^{\: +\infty} P(u,v) \cdot \exp\Big(\frac{-2\pi i (xu+yv)}{\lambda R}\Big)\; dudv \Big \rvert
 \end{equation}
-with $R$ the radius of the pupil (in our case the radius of open pupil for which our phase maps are calculated), and the $\lambda$ the wavelength of the light. The center of light of the PSF can be calculated from $I(x,y)$ with
+with $R$ the radius of the entrance pupil (in our case the radius of open pupil for which our phase maps are calculated), and the $\lambda$ the wavelength of the light. The center of light of the PSF can be calculated from $I(x,y)$ with
 \begin{eqnarray}
 \langle x \rangle = E^{-1} \iint\limits_{-\infty}^{\: +\infty} x \cdot I(x,y) \; dxdy \label{cl1}\\
 \langle y \rangle = E^{-1} \iint\limits_{-\infty}^{\: +\infty} y \cdot I(x,y) \; dxdy \label{cl2}
@@ -56,3 +56,5 @@ with $\tau^{\ast}$ the complex conjugate to $\tau$. In particular, with Eqs.~\re
 \end{eqnarray}
 
 We define the true position as the center of curvature of the reference sphere of our optical system, with the chief ray (defining the line of sight) running through the center of curvature of the reference sphere and the center of the exit pupil (see Fig.~\ref{fig:ast_theory_tp}).
+
+  
