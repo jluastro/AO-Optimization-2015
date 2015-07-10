@@ -53,7 +53,7 @@ While we have to make sure that the center of light is strictly zero for the atm
 \item
 We make sure that $[\langle x \rangle , \langle y \rangle]_{\rm{instr.}}$ is zero. This is most precisely done using the relation between the the aberration function $W(u,v)$ and the center of light:
 \begin{equation}
-\langle x \rangle = \propto \iint \limits_S I(u,v) \frac{\partial W(u,v)}{\partial u} \; du dv
+\langle x \rangle \propto \iint \limits_S I(u,v) \frac{\partial W(u,v)}{\partial u} \; du dv
 \end{equation}
 (and $\langle y \rangle$ likewise) with $I(u,v) = A(u,v)^2$ the illumination of the pupil (assumed to be uniform in our case, see Eq.~\ref{amp}). $W(u,v)$ is our phase map after applying the hexagonal pupil.
 \item
@@ -63,5 +63,6 @@ We use a different centering scheme for the instrumental kernel ( e.g., centerin
 It is the best way to use method 1 because we avoid further complications with look-up tables or additional contributions in the distortion correction that are not caused by geometric distortion.
 
 
+  
   
   
