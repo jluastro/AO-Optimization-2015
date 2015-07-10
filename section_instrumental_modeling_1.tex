@@ -15,28 +15,27 @@ the NIRC2 focal plane to make a new map of the instrumental
 aberrations.
 Both the ``old'' aberration map and the ``new'' aberration map were
 constructed using Zernike decomposition and interpolation as has been
-suggested by the EAC.
+suggested by the EAC (\S\ref{sec:inst_zernike}).
 
 \subsection{Time Variability}
 \label{sec:instrument_time}
-We have taken a substantial amount of phase diversity data on NIRC2
-since October 2012 (Figure \ref{fig:inst_phase_maps}). One of the main objectives
-for taking such a large amount of data over time is to measure any
-contribution to time variability at the four corners (hereafter called
-the "extrema" points) of the detector to see how the RMS$\Delta$
-changes as a function of time. To do this, we take data at the center
-of the detector and at the four corners, taking the same positions
-across multiple epochs. We center-subtract each of the four corners in
-a respective epoch, and we measure the RMS between a given epoch and
-the October 2012 epoch as shown in Figure \ref{fig:inst_time_var}. 
-Since this time variability analysis is complete for the full grid,
-there is at maximum a contribution of $\sim$60 nm RMS from time
-variability at the extreme points. Note that this is still far lower
-than the measured 190 nm RMS wavefront error measured at the extrema.
 
-
-    
-    
+We have monitored the NIRC2 instrumental aberrations by 
+acquiring phase diversity data over the entire NIRC2 field of view
+multiple times between October 2012 and May 2015. 
+A dense grid was first obtained in 2012 (Figure \ref{fig:inst_phase_masp}). 
+Additionally, we have routinely measured the center and four courners
+of the detector
+(hereafter called the "extrema" points) in order to characterize the
+time variability. The center phase map is subtracted from each of the
+corners to produce differential phase maps. These extreme typically
+show a RMS wavefront error of 190 nm. The differential phase
+maps at each epoch are compared with the October 2012 and the
+difference is quantified by the $\Delta$RMS as shown in Figure
+\ref{fig:inst_time_var}. 
+While the field-dependence of the instrumental aberrations appear to
+change with time, the maximum contribution is $\sim$60 nm RMS, which
+is a small fraction of the total wavefront error. 
     
     
     

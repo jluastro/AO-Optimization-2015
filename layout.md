@@ -6,6 +6,7 @@ figures/full_pd_grid/full_pd_grid.png
 figures/time_variability_plot/time_variability_plot.png
 section_instrumental_modeling_2.tex 
 figures/time_variability_pairwise_plot/time_variability_pairwise_plot.png
+figures/inst_wave_focus/inst_wave_focus.png
 subsection_NIRC2_Hardware_Adjustments.tex
 figures/elongation_misalignment_fig/elongation_misalignment_fig.png
 subsection_Interpolated_Model_The_interpolated__1.tex
