@@ -13,7 +13,8 @@ As a result StarFinder2.0 offers:
   
 Test-runs revealed a number of bugs both in our first implementation of the PSF-modeling and in the original StarFinder code. At the time of the EAC's visit StarFiner2.0 runs stable on single frames. At this time the efficiency of the code still needs to improved. The reason is that the atmospheric code is invoked for each single modeled PSF. First steps are taken to multithread the algorithm, only the IDL-interface to the C++ portion of the code still needs to be developed.
 
-Two important requirements became evident during test runs with StarFinder: (1) The consistent definition of the center of the PSF patch as astrometric reference (several sub-routines of SF used instead the maximum pixel of the PSF), and (2) A sufficiently contineous PSF grid that allows the fitting algorithm to converge. While the first requirement is easily met by modifying the sub-routines sub_array.pro and sub_arrays.pro, the second requirement is solved by interpolating the PSF grid. 
+Two important requirements became evident during test runs with StarFinder: (1) The consistent definition of the center of the PSF patch as astrometric reference (several sub-routines of SF used instead the maximum pixel of the PSF), and (2) A sufficiently contineous PSF grid that allows the fitting algorithm to converge. While the first requirement is easily met by modifying the sub-routines sub\_array.pro and sub\_arrays.pro, the second requirement is solved by interpolating the PSF grid. 
+  
   
   
   
