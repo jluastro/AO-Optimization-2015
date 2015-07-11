@@ -13,7 +13,10 @@ As a result StarFinder2.0 offers:
   
 Test-runs revealed a number of bugs both in our first implementation of the PSF-modeling and in the original StarFinder code. At the time of the EAC's visit StarFiner2.0 runs stable on single frames. At this time the efficiency of the code still needs to improved. The reason is that the atmospheric code is invoked for each single modeled PSF. First steps are taken to multithread the algorithm, only the IDL-interface to the C++ portion of the code still needs to be developed.
 
+The atmospheric and instrumental modeling demand a large amount of additional information that has to be passed on to the lowest level routines. In order to maintain the readability and organization of the existing StarFinder we decided to make use of the inherited variable \_extra in IDL. This variable type allows to pass keywords to routines for which they are not defined in the procedure declaration. Those keywords are then passed further down until they hit a procedure that accepts it. While this strategy helps to make the necessary changes fast and safely, it also means that a lot of information is hidden and difficult to follow through the steps of the algorithm.
+
 Two important requirements became evident during test runs with StarFinder: (1) The consistent definition of the center of the PSF patch as astrometric reference (several sub-routines of SF used instead the maximum pixel of the PSF), and (2) A sufficiently contineous PSF grid that allows the fitting algorithm to converge. While the first requirement is easily met by modifying the sub-routines sub\_array.pro and sub\_arrays.pro, the second requirement is solved by interpolating the PSF grid. 
+  
   
   
   
