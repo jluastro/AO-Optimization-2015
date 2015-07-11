@@ -25,6 +25,7 @@ section_astrometric_theory_3.tex
 figures/ast_theory_true_pos/ast_theory_true_pos.png
 section_astrometric_theory_4.tex
 section_AO_Opt_Tools.tex
+In_year_4_we_made__.tex
 figures/Screen Shot 2015-07-10 at 6.43.07 PM/Screen Shot 2015-07-10 at 6.43.07 PM.png
 figures/Screen Shot 2015-07-10 at 6.43.27 PM/Screen Shot 2015-07-10 at 6.43.27 PM.png
 section_testing.tex
