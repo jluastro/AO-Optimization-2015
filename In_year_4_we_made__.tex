@@ -1,2 +1,14 @@
 In year 4 we made significant progress in developing a software suite that allows us to apply the PSF modeling tools to on-sky Galactic Center data. Builing on the prototype PSF-extraction presented last year we fully implemented PSF-modeling, PSF-extraction, and PSF-fitting routines. Furthermore, we gathered several versions of StarFinder1.6 with improvements in PSF extraction and post-processing from various sources and implemented and tested all modifications.
+
+As a result StarFinder2.0 offers:
+\begin{enumerate}
+\item Full functionality of SF1.6 and thus full backwards compatibility.
+\item PSF-extraction and -fitting with variable PSFs, both atmospheric and instrumental. The instrumental interface uses phase-maps as the input data and can be used for introducing any kind of phase aberrations to.
+\item Improved handling of secondary sources (stars close to a PSF reference source) in the PSF-extraction.
+\item Improved background and noise subtraction/clipping for PSF-estimates.
+\item A new GC analysis wrapper for StarFinder that makes it possible to test the psf-modeling against on-sky data of crowded fields.
+\item Version control via GIT repository.
+\item Unit and regression tests.
+\end{enumerate}
+  
   
