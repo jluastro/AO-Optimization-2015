@@ -1,6 +1,10 @@
 abstract.tex
 Introduction.tex
 section_project_overview.tex
+section_atmospheric_code_1.tex
+figures/atmospheric_lgs_geometry/atmospheric_lgs_geometry.png
+figures/atmospheric_lgs_geometry_check/atmospheric_lgs_geometry_check.png
+section_atmospheric_code_2.tex
 section_instrumental_modeling_1.tex
 figures/full_pd_grid/full_pd_grid.png
 figures/time_variability_plot/time_variability_plot.png
@@ -12,10 +16,7 @@ figures/elongation_misalignment_fig/elongation_misalignment_fig.png
 subsection_Interpolated_Model_The_interpolated__1.tex
 figures/on_off_grid_fig/on_off_grid_fig.png
 figures/differences_fxn_of_pos/differences_fxn_of_pos.png
-section_atmospheric_code_1.tex
-figures/atmospheric_lgs_geometry/atmospheric_lgs_geometry.png
-figures/atmospheric_lgs_geometry_check/atmospheric_lgs_geometry_check.png
-section_atmospheric_code_2.tex
+section_nirc2_distortion.tex
 section_astrometric_theory_1.tex
 figures/ast_theory_psf/ast_theory_psf.png
 section_astrometric_theory_2.tex

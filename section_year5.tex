@@ -1,2 +1,99 @@
 \section{Year 5 Plans}
 \label{sec:year5}
+
+We present below a detailed breakdown of the goals for Year 5. 
+\begin{enumerate}
+\item[Goal 1.] Develop algorithms to predict atmospheric-induced aberrations
+  from MASS/DIMM data for both natural and laser guide star
+  observations.
+  \begin{itemize}
+  \item Implement new IDL interface to atmospheric code to improve
+    efficiency of STF 2.0.
+  \item Fix bugs that currently limit PSF size to 181$\times$181
+    pixels.
+  \item Finalize installation documentation for atmospheric code and
+    dependencies (e.g. Arroyo). 
+  \item Finalize documentation and examples.
+  \item Release package (v1.0).
+  \end{itemize}
+
+\item[Goal 2.] Map NIRC2 instrumental aberrations that effect the PSF
+  shape.
+  \begin{itemize}
+  \item Complete last 30\% of the ``new'' grid of phase diversity
+    data (post-hardware upgrade).
+  \item Deliver the ``new'' aberration map.
+  \end{itemize}
+
+\item[Goal 3.] Update the NIRC2 distortion solution utilizing a spatially
+  variable PSF.
+  \begin{itemize}
+  \item Run STF 2.0 on globular cluster data to create starlists using
+    both a single PSF and a spatially varying PSF.
+  \item Derive a NIRC2 distortion solutions using these starlists.
+  \item Deliver the single-PSF NIRC2 distortion solution to Keck to
+    upgrade the existing website.
+  \item Package the variable-PSF NIRC2 distortion solution with
+    Starfinder 2.0 and AO Optimization.
+  \item Modify our NIRC2 reduction pipeline to utilize the new
+    distortion solution.
+  \end{itemize}
+
+\item[Goal 4.] Upgrade Starfinder 2.0 to extract an on-axis PSF from images with
+  a spatially varying PSF due to atmospheric and instrumental aberrations.
+  \begin{itemize}
+  \item Incorporate final ``old'' and ``new'' NIRC2 aberration maps in code.
+  \item Test on simulated images with spatially varying PSFs and
+    quantify residuals under different conditions. 
+  \item Fix minor bugs.
+  \end{itemize}
+
+\item[Goal 5.] Upgrade Starfinder 2.0 to extract stellar astrometry and
+  photometry using spatially varying PSFs.
+  \begin{itemize}
+  \item Test on simulated images with a smoothly varying PSF to
+    determine optimal number of grid points for the STF 2.0 grid of
+    PSFs.
+  \item Test analysis on single images vs. combined images.
+  \item Fix minor bugs.
+  \item Add documentation for STF 2.0 upgrades, installation,
+    wrappers, and example scripts.
+  \end{itemize}
+
+\item[Goal 6.] Apply AO Optimization tools to Galactic Center and demonstrate
+  astrometric gains.
+  \begin{itemize}
+  \item Simulations
+    \begin{itemize}
+    \item Single-epoch image stack error budget.
+    \item Maser mosaic and astromtric reference frame error budget.
+    \item S0-2 full-orbit error budget.
+    \end{itemize}
+  \item Observations
+    \begin{itemize}
+    \item Test single-epoch image stack (small dither) under variable
+      conditions. 
+    \item Test single-epoch image mosaic (large dither) to validate
+      improvements in astrometric accuracy. 
+    \item Test image stacks from adjacent nights to examine
+      astrometric precison/accuracy in different atmospheric conditions.
+    \item Re-analyze all Galactic Center AO data with MASS/DIMM
+      (central pointings, maser mosaics) with STF 2.0.
+    \item Derive new reference frame.
+    \item Measure new proper motions and orbits.
+    \item Derive new black hole mass and distance.
+    \item Compare results from AO Optimization to previous results.
+    \end{itemize}
+  \end{itemize}
+
+\item[Goal 7.] Disseminate AO Optimization tools to a broader
+  community.
+  \begin{itemize}
+  \item Publish papers on the complete AO Optimization algorithms,
+    centroid handling, and Starfinder 2.0 upgrades. 
+  \item Publish papers on Galactic Center science gains with AO Optimization.
+  \item Release complete software package, including STF 2.0, NIRC2
+    distortion solution for variable PSF, and atmospheric code to
+    alpha-testers (i.e. Keck, Moore AO Opt).
+  \end{itemize}
+\end{enumerate}
