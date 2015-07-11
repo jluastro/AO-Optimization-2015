@@ -30,6 +30,7 @@ figures/Screen Shot 2015-07-10 at 8.20.38 PM/Screen Shot 2015-07-10 at 8.20.38 P
 figures/Screen Shot 2015-07-10 at 6.43.07 PM/Screen Shot 2015-07-10 at 6.43.07 PM.png
 figures/Screen Shot 2015-07-10 at 6.43.27 PM/Screen Shot 2015-07-10 at 6.43.27 PM.png
 section_testing.tex
+The_AO_correction_was_very__.tex
 figures/Screen shot 2015-07-10 at 8.56.28 PM2/Screen shot 2015-07-10 at 8.56.28 PM2.png
 figures/Screen shot 2015-07-10 at 9.01.12 PM/Screen shot 2015-07-10 at 9.01.12 PM.png
 figures/Screen shot 2015-07-10 at 8.56.28 PM1/Screen shot 2015-07-10 at 8.56.28 PM1.png
