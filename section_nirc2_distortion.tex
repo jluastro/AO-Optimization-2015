@@ -1,0 +1,17 @@
+\section{New NIRC2 Distortion Solution}
+\label{sec:distortion}
+
+The NIRC2 distortion solution is an essential component of our analysis pipeline to extract precise and accurate proper motions at the Galactic Center. The current NIRC2 distortion solution was determined assuming a constant PSF over the field of view, and as a consequence has captured astrometric shifts induced by variations in the PSF that have not been accounted for. When utilizing Starfinder 2.0, to achieve consistency we m​ust h​ave a new NIRC2 distortion solution derived with a spatially varying PSF model. The derivation of the NIRC2 distortion solution must be the first application of Starfinder 2.0 since analysis of multi-epoch or dithered Galactic Center data depends on having an updated distortion solution.
+
+As a reminder, the on­sky observations of the M92 globular cluster used to extract the current NIRC2 distortion solution did not have associated MASS/DIMM data. Thus they cannot be used to determine a distortion solution that is free of systematic offsets due to PSF variations unless the Cn2 profile is solved for simultaneously. We have previously shown that the the on­sky M92 data produces a more precise distortion solution that using the NIRC2 pinhole mask (Yelda et al. 2010), which has recently been removed from NIRC2. 
+Thus new on-sky observations are necessary to derive a new distortion solution. 
+
+We have successfully observed the globular cluster M53 using NIRC2
+while simultaneously measuring the turbulence profile with the
+MASS/DIMM unit. We have completed an extensive dither/rotation pattern
+that will allow us to extract a new NIRC2 distortion solution using
+Starfinder 2.0. This cluster has been observed extensively with HST and a astrometry and proper motion catalog is available to serve as an aboslute reference for our observations. 
+The data have been reduced using our upgraded version of the NIRC2 reduction pipeline.
+This pipeline is available for public use on GitHub. 
+
+
