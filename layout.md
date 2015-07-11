@@ -1,5 +1,6 @@
 abstract.tex
 Introduction.tex
+figures/ao_opt_schematic/ao_opt_schematic.png
 section_project_overview.tex
 section_atmospheric_code_1.tex
 figures/atmospheric_lgs_geometry/atmospheric_lgs_geometry.png
@@ -26,15 +27,15 @@ figures/ast_theory_true_pos/ast_theory_true_pos.png
 section_astrometric_theory_4.tex
 section_AO_Opt_Tools.tex
 In_year_4_we_made__.tex
-figures/Screen Shot 2015-07-10 at 8.20.38 PM/Screen Shot 2015-07-10 at 8.20.38 PM.png
-figures/Screen Shot 2015-07-10 at 6.43.07 PM/Screen Shot 2015-07-10 at 6.43.07 PM.png
-figures/Screen Shot 2015-07-10 at 6.43.27 PM/Screen Shot 2015-07-10 at 6.43.27 PM.png
+figures/results_fig1/results_fig1.png
+figures/results_fig2/results_fig2.png
+figures/results_fig3/results_fig3.png
 section_testing.tex
 The_AO_correction_was_very__.tex
-figures/Screen shot 2015-07-10 at 8.56.28 PM2/Screen shot 2015-07-10 at 8.56.28 PM2.png
-figures/Screen shot 2015-07-10 at 9.01.12 PM/Screen shot 2015-07-10 at 9.01.12 PM.png
-figures/Screen shot 2015-07-10 at 8.56.28 PM1/Screen shot 2015-07-10 at 8.56.28 PM1.png
-figures/Screen shot 2015-07-10 at 8.56.28 PM/Screen shot 2015-07-10 at 8.56.28 PM.png
+figures/results_fig4/results_fig4.png
+figures/results_fig5/results_fig5.png
+figures/results_fig6/results_fig6.png
+figures/results_fig7/results_fig7.png
 section_dissemination_1.tex
 figures/diss_git_repos/diss_git_repos.png
 section_dissemination_2.tex
