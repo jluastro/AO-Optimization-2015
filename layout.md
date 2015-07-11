@@ -30,6 +30,7 @@ figures/Screen Shot 2015-07-10 at 8.20.38 PM/Screen Shot 2015-07-10 at 8.20.38 P
 figures/Screen Shot 2015-07-10 at 6.43.07 PM/Screen Shot 2015-07-10 at 6.43.07 PM.png
 figures/Screen Shot 2015-07-10 at 6.43.27 PM/Screen Shot 2015-07-10 at 6.43.27 PM.png
 section_testing.tex
+figures/Screen shot 2015-07-10 at 8.56.28 PM/Screen shot 2015-07-10 at 8.56.28 PM.png
 section_dissemination_1.tex
 figures/diss_git_repos/diss_git_repos.png
 section_dissemination_2.tex
