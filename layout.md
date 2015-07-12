@@ -19,6 +19,7 @@ figures/on_off_grid_fig/on_off_grid_fig.png
 figures/differences_fxn_of_pos/differences_fxn_of_pos.png
 section_nirc2_distortion.tex
 section_astrometric_theory_1.tex
+figures/Screen Shot 2015-07-12 at 12.32.49 AM/Screen Shot 2015-07-12 at 12.32.49 AM.png
 section_astrometric_theory_2.tex
 figures/ast_theory_op/ast_theory_op.png
 section_astrometric_theory_3.tex
