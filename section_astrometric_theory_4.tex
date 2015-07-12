@@ -42,7 +42,7 @@ and accordingly:
 \end{equation}
 
  
-Eq.~\ref{dep} shows that an empirical centroid estimation (e.g., defined as the centroid calculation over a non-infinte support around the maximum pixel from a noisy estimate of the PSF, or any of the above) on $I_{\rm{off-axis}}(x,y; x',y',t)$ (where $I(x,y)$ is unknown for large $x,y$) becomes dependent on both field position and time. Consequentely, it is not useful as astrometric reference. However, we see that the first term on the right side of Eq.~\ref{dep} has no field dependence. Since the centroid deviations are additive, we can tolerate an offset in this term and any choice of an astrometic reference point is valid. If our further PSF-modeling with the atmospheric and instrumental OTFs preserves the initial relation between the astrometric reference (the point in the 'on-axis PSF' that we placed in the center of our PSF array) and the true position, we avoid systematics in our relative astrometry.
+Eq.~\ref{dep} shows that an empirical centroid estimation (e.g., defined as the centroid calculation over a non-infinte support around the maximum pixel from a noisy estimate of the PSF, or any of the above) on $I_{\rm{off-axis}}(x,y; x',y',t)$ (where $I(x,y)$ is unknown for large $x,y$) becomes dependent on both field position and time. Consequentely, it is not useful as astrometric reference. However, we see that the first term on the right side of Eq.~\ref{dep} has no field dependence. Since the centroid deviations are additive, we can tolerate an offset in this term and any choice of an astrometic reference point is valid. If our further PSF-modeling with the atmospheric and instrumental OTFs preserves the relation between the astrometric reference (the point in the 'on-axis PSF' that we placed in the center of our PSF array) and the true position over time, we can compensate for aberration induced astrometic offsets with our distortion map and we avoid systematics in our relative astrometry.
 
 In order to estimate the first term (the 'on-axis PSF'), we use an number of reference stars which we deconvolve with both the atmospheric and instrumental kernel. Assuming that the resulting on-axis estimates are sufficiently similar in shape, we apply an arbitrary PSF-centering method (e.g., StarFinders centroider that uses the centroid of the innermost FWHM box around the maximum of the PSF). We then average the individual deconvolved and centered reference stars. We obtain an 'on-axis' PSF with an astrometric reference $[\langle x \rangle , \langle y \rangle]_{\rm{on-axis}}$ which has an unknown deviation from the true position and is different for each frame, but which is independent on the field position. 
 
@@ -63,6 +63,7 @@ We use a different centering scheme for the instrumental kernel ( e.g., centerin
 It is the best way to use method 1 because we avoid further complications with look-up tables or additional contributions in the distortion correction that are not caused by geometric distortion.
 
 
+  
   
   
   
