@@ -57,12 +57,13 @@ We make sure that $[\langle x \rangle , \langle y \rangle]_{\rm{instr.}}$ is zer
 \end{equation}
 (and $\langle y \rangle$ likewise) with $I(u,v) = A(u,v)^2$ the illumination of the pupil (assumed to be uniform in our case, see Eq.~\ref{amp}). $W(u,v)$ is our phase map after applying the hexagonal pupil.
 \item
-We use a different centering scheme for the instrumental kernel ( e.g., centering on the maximum of the kernel). Because this term is independent on time it is possible to account for the displacement with a look-up table or the distortion map. 
+We use a different centering scheme for the instrumental kernel ( e.g., centering on the maximum of the kernel), which then is related to the distortion map solution and cannot be changed. 
 \end{enumerate}
 
-It is the best way to use method 1 because we avoid further complications with look-up tables or additional contributions in the distortion correction that are not caused by geometric distortion.
+Because the last term is independent on time it is possible to account for the displacement that belongs to the particular centering scheme with a look-up table or the distortion map. It is the easiest convention to use method 1.
 
 
+  
   
   
   
