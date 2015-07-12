@@ -34,7 +34,6 @@ section_testing.tex
 The_AO_correction_was_very__.tex
 figures/results_fig4/results_fig4.png
 figures/results_fig5/results_fig5.png
-figures/results_fig6/results_fig6.png
 figures/results_fig7/results_fig7.png
 section_dissemination_1.tex
 figures/diss_git_repos/diss_git_repos.png
