@@ -23,8 +23,8 @@ the AO Optimization project:
 \end{enumerate}
 These revised goals differ from the original project goals 
 (Appendix \ref{app:original_goals}) in that
-they reflect the time and effort needed for software and
-algorithm development (atmospheric code and Starfinder 2.0) after Year
+they are more specific and better represent the software and
+algorithm development (atmospheric code and Starfinder 2.0) conducted after Year
 3. 
 
 % As a reminder, the AO Optimization project funded by the
@@ -118,10 +118,11 @@ Starfinder 2.0.
 
 \noindent
 \textit{Year 3 Status:} 
-YYY Had a test case using STF 2.0 under-pinnings to extract an
-on-axis PSF. However, this wasn't implemented within our STF 2.0
-framework and wrappers. Here is Gunther's description of the
-differences. 
+We presented preliminary results from our integration of the
+atmospheric code with Starfinder, which became the foundation for
+Starfinder 2.0. We validated that this prototype could extract an
+on-aixs (un-observable) PSF from a set of off-axis guide stars and a
+MASS/DIMM measurement. 
 
 It is correct that the tools I presented were integrated with
 Starfinder. But what I did not realize at that point is how much of
@@ -138,7 +139,10 @@ including many changes of the versions that were floating around.
 \noindent
 \textit{Year 4 Status:}
 (see also \S\ref{sec:astrometric_theory} and \S\ref{sec:tools})
-YYY FILL IN YYYY
+The atmospheric code is now fully integrated into Starfinder 2.0 and
+PSFs can be extracted in an iterative fashion using our standard
+(upgraded) analysis wrapper code. 
+
 
 \subsection{Goal 5: Upgrade Starfinder 2.0 to extract stellar astrometry and
   photometry using spatially varying PSFs.}
@@ -150,7 +154,11 @@ No new progress was reported in Year 3.
 \noindent
 \textit{Year 4 Status:}
 (see also \S\ref{sec:astrometric_theory} and \S\ref{sec:tools})
-YYY FILL IN YYY
+The atmospheric code is now fully integrated into Starfinder 2.0 and
+stellar astrometry and photometry can be extracted in an iterative
+fashion using our standard
+(upgraded) analysis wrapper code. 
+
 
 \subsection{Goal 6: Apply AO Optimization tools to Galactic Center and demonstrate
   astrometric gains.}
@@ -166,10 +174,12 @@ analysis, it was an essential first step in demonstrating that the
 \noindent
 \textit{Year 4 Status:}
 (see also \S\ref{sec:testing})
- We have completed modifications to the GC analysis pipeline to fully
-incorporate Starfinder 2.0, which calls the atmospheric code. We have
+With the completion of Starfinder 2.0, which calls the atmospheric
+code, we have begun testing and optimizing with on-sky data. We have
 successfully run Starfinder 2.0 on a single-night stack of Galactic
-Center images and YYY RESULTS YYY.
+Center images. PSF extraction and prediction has been validated
+with analysis of image residuals, astrometry, and photometry compared
+with the original Starfinder 1.6. 
 
 
 \subsection{Goal 7: Disseminate AO Optimization tools to a broader community.}
