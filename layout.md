@@ -35,6 +35,7 @@ The_AO_correction_was_very__.tex
 figures/results_fig4/results_fig4.png
 figures/results_fig5/results_fig5.png
 figures/Screen Shot 2015-08-14 at 12.37.23 PM/Screen Shot 2015-08-14 at 12.37.23 PM.png
+figures/Screen Shot 2015-08-14 at 12.38.10 PM/Screen Shot 2015-08-14 at 12.38.10 PM.png
 section_dissemination_1.tex
 figures/diss_git_repos/diss_git_repos.png
 section_dissemination_2.tex
